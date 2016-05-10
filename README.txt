@@ -13,7 +13,7 @@ This plugin enables creation of multi-slide forms using the contact form 7 plugi
 == Description ==
 
 This plugin is an extension (module) for Contact Form 7 plugin.  It allows users to develop multislide
-forms, one cf7 form on each slide.  However, a single mail will all the combined slide-forms entry
+forms, one cf7 form on each slide.  However, a single mail with all the combined slide-forms entry
 is sent upon successful submission of the last slide-form.
 
 
