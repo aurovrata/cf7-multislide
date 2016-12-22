@@ -3,8 +3,8 @@ Contributors: aurovrata
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=64EDYAVB7EGTJ
 Tags: multislide, slide form, contact form 7, contact form 7 extension, contact form 7 module
 Requires at least: 3.0.1
-Tested up to: 4.5.1
-Stable tag: 1.0
+Tested up to: 4.7
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,14 +16,21 @@ This plugin is an extension (module) for Contact Form 7 plugin.  It allows users
 forms, one cf7 form on each slide.  However, a single mail with all the combined slide-forms entry
 is sent upon successful submission of the last slide-form.
 
+= Checkout our other CF7 plugin extensions =
+
+* [CF7 Polylang Module](https://wordpress.org/plugins/cf7-polylang/) - this plugin allows you to create forms in different languages for a multi-language website.  The plugin requires the [Polylang](https://wordpress.org/plugins/polylang/) plugin to be installed in order to manage translations.
+
+* [CF7 Multi-slide Module](https://wordpress.org/plugins/cf7-multislide/) - this plugin allows you to build a multi-step form using a slider.  Each slide has cf7 form which are linked together and submitted as a single form.
+
+* [Post My CF7 Form](https://wordpress.org/plugins/post-my-contact-form-7/) - this plugin allows you to save you cf7 form submissions to a custom post, map your fields to meta fields or taxonomy.  It also allows you to pre-fill fields before your form  is displayed.
 
 == Installation ==
 
 1. Unpack `cf7-multislide.zip` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create a new form in the CF7 editor.  Select the [multislide] tag, and place it at the end of your form.
-4. In your last form, you can use the previous slide-forms fields in your mail settings. Note, CF7 plugin may
-complain that these don't exist.  Ignore these messages.
+3. Create a new form in the CF7 editor.  Select the [multislide] tag, and place it at the end of your form.  Define the number of total slides as well as the current slide.  So if you plan on having 3 slides, you need to create 3 cf7 forms.  The first form (show on the first slide) will have slide number = 1 and total slides = 3.  In the 2nd cf7 form you will need to add a new [multislide] tag, this time the slide number = 2 and total slides = 3 and so on.
+4. In your last form, you can use the previous slide-forms fields in your mail settings. Note, CF7 plugin may complain that these don't exist.  Ignore these messages.
+
 
 == Frequently Asked Questions ==
 
@@ -57,6 +64,9 @@ the end of the form.
 2. Define the current slide and the total number of slides.
 
 == Changelog ==
+= 1.1 =
+* updated to reflect changes in Contact Form 7 v4.6
+* fixed jquery bug in tag generator
 
 = 1.0 =
 * first version, only in english locale

@@ -107,13 +107,13 @@ class Cf7_Multislide_Admin {
 	 * @since 1.0.0
 	 */
 	function add_cf7_shortcode_multislide() {
-	    if (function_exists('wpcf7_add_shortcode')) {
-					wpcf7_add_shortcode(
-	            array( 'multislide', 'multislide*' ),
-	            array($this,'multislide_shortcode_handler'),
-	            true
-	        );
-	    }
+    if( class_exists('WPCF7_FormTagsManager') ) {
+      wpcf7_add_form_tag(
+        array( 'multislide', 'multislide*' ),
+        array($this,'multislide_shortcode_handler'),
+        true
+      );
+    }
 	}
 	/**
 	 * Add to the wpcf7 tag generator.
@@ -195,8 +195,6 @@ class Cf7_Multislide_Admin {
 	 * @param array $args arguments for this form.
 	 */
 	function multislide_tag_generator( $contact_form, $args = '' ) {
-	    //$args = wp_parse_args( $args, array() );
-			error_log("Loading tag display: ".plugin_dir_path( __FILE__ ) . '/partials/cf7-multislide-admin-display.php');
 			include( plugin_dir_path( __FILE__ ) . '/partials/cf7-multislide-admin-display.php');
 	}
 	/**

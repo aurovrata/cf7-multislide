@@ -19,7 +19,7 @@
     <fieldset>
         <legend>Mulstislide form using contact form 7</legend>
 
-        <table class="form-table">
+        <table id="multislide-tag-generator" class="form-table">
             <tbody>
                 <tr>
                     <th scope="row">
