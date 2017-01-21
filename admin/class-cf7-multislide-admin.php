@@ -258,12 +258,12 @@ class Cf7_Multislide_Admin {
 	* @return array merged list of data fields from all slides if this is last slide.
 	*/
 	function merge_all_slide_posted_data($posted_data){
-			//error_log("Multislide INITIAL data: \n".print_r($posted_data,true));
 			//Is this a multislide form?
-			$security = $posted_data['cf7slide_security'];
-			if( empty($security) ){
+      if( !isset($posted_data['cf7slide_security']) ){
 				return $posted_data;
 			}
+			$security = $posted_data['cf7slide_security'];
+
 
 			$current_slide = $posted_data['current_slide'];
 			$total_slides = $posted_data['total_slides'];
