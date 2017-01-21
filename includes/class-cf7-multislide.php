@@ -69,7 +69,7 @@ class Cf7_Multislide {
 	public function __construct() {
 
 		$this->plugin_name = 'cf7-multislide';
-		$this->version = '1.1.0';
+		$this->version = '1.1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();

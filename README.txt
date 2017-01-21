@@ -64,6 +64,10 @@ the end of the form.
 2. Define the current slide and the total number of slides.
 
 == Changelog ==
+
+= 1.1.1 =
+* fixed a bug which checked for security nonce on all cf7 forms, including those not using multislide tags
+
 = 1.1 =
 * updated to reflect changes in Contact Form 7 v4.6
 * fixed jquery bug in tag generator
