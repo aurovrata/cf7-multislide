@@ -124,7 +124,7 @@ class Cf7_Multislide_Admin {
 	function add_cf7_tag_generator_multislide() {
 	    if ( class_exists( 'WPCF7_TagGenerator' ) ) {
 	        $tag_generator = WPCF7_TagGenerator::get_instance();
-	        $tag_generator->add( 'multislide', __( 'multislide', 'cf7slide' ), array($this,'multislide_tag_generator') );
+	        $tag_generator->add( 'multislide', __( 'multislide', 'cf7slide' ), array($this,'multislide_tag_generator'), array( 'nameless' => 1 ) );
 	    }
 	}
 	/**
